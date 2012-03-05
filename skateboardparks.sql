@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 02, 2012 at 12:22 AM
+-- Generation Time: Mar 05, 2012 at 07:08 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -31,13 +31,15 @@ CREATE TABLE IF NOT EXISTS `skateboardparks` (
   `address` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `rating` int(1) NOT NULL,
   `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `lat` int(255) NOT NULL,
+  `longi` int(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `skateboardparks`
 --
 
-INSERT INTO `skateboardparks` (`id`, `name`, `address`, `rating`, `description`) VALUES
-(1, 'Fire Roll', '326, Shutdown Drive', 3, 'This place is as its name, fast, energetic and boombastic.'),
-(2, 'Burning Board', '497, Deadend Follow Ave.', 4, 'Here you get so many expert skaters who get hell out of there boards.');
+INSERT INTO `skateboardparks` (`id`, `name`, `address`, `rating`, `description`, `lat`, `longi`) VALUES
+(1, 'Fire Roll', '326, Shutdown Drive', 3, 'This place is as its name, fast, energetic and boombastic.', 2443, 3423),
+(2, 'Burning Board', '497, Deadend Follow Ave.', 4, 'Here you get so many expert skaters who get hell out of there boards.', 789, 987);
