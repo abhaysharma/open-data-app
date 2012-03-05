@@ -33,6 +33,7 @@ $results = $db->query('
 		<ul>
 			<?php foreach($results as $parks):?>
 				<li><a href="single.php?id=<?php echo $parks['id']; ?>"><?php echo $parks['name']; ?></a></li>
+				<a href="admin/edit.php?id=<?php echo $parks['id'];?>">Edit</a>
 			<?php endforeach; ?>
 		</ul>
 	</div>
