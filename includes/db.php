@@ -2,7 +2,7 @@
 
 $user = getenv("DB_USER");
 $pass = getenv("DB_PASS");
-$dsn = stripslashes(getenv("DB_DNS"));
+$dsn = stripslashes(getenv("DB_DSN"));
 
 $db = new PDO($dns, $user, $pass);
 
