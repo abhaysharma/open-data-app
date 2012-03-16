@@ -14,8 +14,8 @@ $name = filter_input(INPUT_POST, 'name',FILTER_SANITIZE_STRING);
 $address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
 $rating = filter_input(INPUT_POST, 'rating', FILTER_SANITIZE_NUMBER_INT);
 $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_STRING);
-$longi = filter_input(INPUT_POST, 'longi', FILTER_SANITIZE_NUMBER_INT);
-$lat = filter_input(INPUT_POST, 'lat', FILTER_SANITIZE_NUMBER_INT);
+$longi = filter_input(INPUT_POST, 'longi', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+$lat = filter_input(INPUT_POST, 'lat', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
 
 if($_SERVER ['REQUEST_METHOD'] == 'POST'){
 	if(empty($name)){
@@ -49,8 +49,8 @@ if($_SERVER ['REQUEST_METHOD'] == 'POST'){
 		$sql->bindValue(':address', $address, PDO::PARAM_STR);
 		$sql->bindValue(':rating', $rating, PDO::PARAM_INT);
 		$sql->bindValue(':description', $description, PDO::PARAM_STR);
-		$sql->bindValue(':longi', $longi, PDO::PARAM_INT);
-		$sql->bindValue(':lat', $lat, PDO::PARAM_INT);
+		$sql->bindValue(':longi', $longi, PDO::PARAM_STR);
+		$sql->bindValue(':lat', $lat, PDO::PARAM_STR);
 		
 		$sql->execute();
 		
