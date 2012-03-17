@@ -1,7 +1,7 @@
 
 <?php
-error_reporting(-1);
-ini_set('display_errors','on');
+//error_reporting(-1);
+//ini_set('display_errors','on');
 
 require_once 'includes/filter-wrapper.php';
 require_once 'includes/db.php';
