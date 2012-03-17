@@ -25,15 +25,12 @@ if(empty($parks)){
 	exit;
 }
 
+$title = $parks['name'];
+
+include 'includes/theme-top.php';
+
 ?>
 
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Ottawa Skateboard Parks &middot; <?php echo $parks['name'];?></title>
-</head>
-<body>
 	<div>
 		<h1><?php echo $parks['name'];?></h1>
 		<p>Address: <?php echo $parks['address'];?></p>
@@ -41,6 +38,4 @@ if(empty($parks)){
 		<p>Description: <?php echo $parks['description'];?></p>
 		<a href="index.php">Home</a>
 	</div>
-	
-</body>
-</html>
+	<?php include 'includes/theme-bottom.php'?>

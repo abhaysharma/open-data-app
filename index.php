@@ -11,17 +11,20 @@ $results = $db->query('
 	ORDER BY name ASC
 ');
 
+$title = "Home";
+
 include 'includes/theme-top.php'
 
 ?>
 
 	
-	<a href="admin/index.php">Admin</a>
+	<div class="wrapper">
 	
 	<div id="map"> </div>
 	
 	<div class="list-area">
-		
+	
+		<a href="admin/index.php">Admin</a>
 		<ul class="search">
 			<a href="#location" class="location">Location</a>
 			<input type="text" name="searchbar" class="search-bar">
@@ -43,5 +46,7 @@ include 'includes/theme-top.php'
 			<?php endforeach; ?>
 		</ul>
 	
+	</div>
+	<div class="list-style"> </div>
 	</div>
 <?php include 'includes/theme-bottom.php'?>
