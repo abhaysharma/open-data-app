@@ -8,7 +8,7 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 $rate = filter_input(INPUT_GET, 'rating', FILTER_SANITIZE_NUMBER_INT);
 
-$cookie = get_rate_cookie();
+//$cookie = get_rate_cookie();
 
 if(empty($id)||empty($rate)||$rtae<0||$rate>5){
 	header ('Location: index.php');
@@ -34,7 +34,11 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
 		$sql->bindValue(':id', $id, PDO::PARAM_INT);
 		$sql->execute();
 		
-		save_rate_cookie($id, $rate);
+		//save_rate_cookie($id, $rate);
+		
+		//$cookie_content = $cookie_content . ';' . $id .':' .$rating;
+		//setcookie('skateboardpark_rated' , $cookie_content , time() + 60 * 60 * 24 * 365, '/');
+		
 		
 		header('Location:index.php');
 		exit;

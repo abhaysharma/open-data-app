@@ -6,7 +6,7 @@
 require_once 'includes/filter-wrapper.php';
 require_once 'includes/db.php';
 $results = $db->query('
-	SELECT id, name, address, rating, longi, lat
+	SELECT id, name, address, rating, longi, lat, numrate
 	FROM skateboardparks
 	ORDER BY name ASC
 ');
@@ -34,26 +34,31 @@ include 'includes/theme-top.php'
 		<ul class="list">
 			<?php foreach($results as $parks):?>
 			<?php 
-				if($parks['numrate'>0]){
-					$rated = $parks['rating']/$parks['numrate'];
+				if($parks['numrate'] > 0){
+					$rated = round($parks['rating']/$parks['numrate']);
+				}else{
+					$rated = 0;
 				}
 				
 				
 			?>
-				<li itemscope itemtype="http://schema.org/TouristAttraction">
+				<li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $parks['id']; ?>">
 					<a href="single.php?id=<?php echo $parks['id']; ?>" itemprop="name"><?php echo $parks['name']; ?></a>
+					
 					<span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates" >
 						<meta itemprop="latitude" content="<?php echo $parks['lat']; ?>">
 						<meta itemprop="longitude" content="<?php echo $parks['longi']; ?>">
 					</span>
-                    <div id="rating" class="clearfix">
-                    	<a href="rate.php?id=<?php echo $parks['id']; ?>&rating=1">★</a>
-                        <a href="rate.php?id=<?php echo $parks['id']; ?>&rating=2">★</a>
-                        <a href="rate.php?id=<?php echo $parks['id']; ?>&rating=3">★</a>
-                        <a href="rate.php?id=<?php echo $parks['id']; ?>&rating=4">★</a>
-                        <a href="rate.php?id=<?php echo $parks['id']; ?>&rating=5">★</a>
+					<meter value="<?php echo $rated; ?>" min="0" max="5">Rating:<?php echo $rated;?></meter>
+                    <ol class="rater">
+                    	<?php for($i=0; $i <= 5; $i++):?>
+							<?php $class = ($i <= $rated) ? 'is-rated' : ''; ?>
+							<li><a href="rate.php?id=<?php echo $parks['id']; ?>&rate=<?php echo $i; ?>"class="rater-level <?php echo $class; ?>">★</a></li>
+						
+                       <?php endfor; ?>
+                       
                     	
-                    </div>
+                    </ol>
 				</li>
 				
 			<?php endforeach; ?>
