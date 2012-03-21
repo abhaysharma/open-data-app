@@ -53,8 +53,9 @@ $(document).ready(function(){
 		google.maps.event.addDomListener($(this).children('a').get(0), 'click', showInfoWindow);
 	});
 	
-
-
+	/*RATINGS*/
+	
+	
 
 
 

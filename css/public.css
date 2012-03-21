@@ -84,6 +84,7 @@ h1{
 	padding: 0;
 	height: 80%;
 	overflow: scroll;
+	
 }
 
 .list li{
@@ -131,6 +132,61 @@ h1{
 	text-decoration: none;
 
 }
+
+
+
+#rating a{
+	display: inline;
+	
+}
+
+clearfix:before,
+clearfix:after{
+	display: table;
+	content: "";
+}
+
+clearfix:after{
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
