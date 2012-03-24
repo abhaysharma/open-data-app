@@ -12,14 +12,16 @@ body{
 
 }
 
-/*.wrapper{
+.wrapper{
+	margin: 0 auto;
+	padding: 0;
 	width: 1000px;
 	height: 800px;
 	position: relative;
-}*/
+}
 
 header{
-	margin: 0;
+	margin: 2em 0 0 0;
 	padding: 0;
 	height: 200px;
 	background: transparent url("../images/header-img.png") no-repeat center center;
@@ -28,10 +30,10 @@ header{
 
 h1{
 	margin: 0;
-	padding: 0;
-	width: 100%;position: absolute;
-	min-height: 200px; 
-	font: normal 300%/1.5 Frijole, sans-serif ;
+	padding: 100px 0 0 0;
+	width: 100%;
+	
+	font: normal 350%/1.5 Frijole, sans-serif ;
 	color: #ff641f;
 	
 	
@@ -39,9 +41,22 @@ h1{
 	text-align: center;
 }
 
+h2{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	xmin-height: 200px; 
+	font: normal 250%/1.5 Frijole, sans-serif ;
+	color: #ff641f;
+	
+	
+	
+	text-align: center;
+
+}
 
 #map {
-	margin: 200px 0 0 1em;
+	margin: 0 0 2em 0;
 	padding:0;
 	bottom: 0;
 	position: absolute;
@@ -51,10 +66,16 @@ h1{
 	width: 75%;
 	height: 75%;
 	background-color: #ccc;
+	
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-ms-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
 }
 
 .list-area{
-	margin: 200px 0 0 2em;
+	margin: 0 0 2em 1em;
 	padding: 0;
 	
 	height: 75%;
@@ -83,7 +104,7 @@ h1{
 	margin: 0;
 	padding: 0;
 	height: 80%;
-	overflow: scroll;
+	overflow: auto;
 	
 }
 
@@ -95,7 +116,7 @@ h1{
 	width: 78%;
 	height: 30px;
 	
-	display: block;
+	display: inline-block;
 	
 	cursor: pointer;
 	
@@ -115,11 +136,14 @@ h1{
 .list li a:visited,
 .list li a:link
 {
+	float: left;
 	margin: 0;
 	padding: 0;
 	display: block;
+	
 	width: 100%;
-	height: 100%;
+	height: 30px;
+	
 	text-decoration: none;
 	color: #000;
 
@@ -128,8 +152,8 @@ h1{
 .list li a:hover,
 .list li a:focus,
 .list li a:active{
+	float: left;
 	
-	color: #fff;
 	text-decoration: none;
 
 }
@@ -148,21 +172,21 @@ clearfix:after{
 
 .rater li{
 	display: inline;
+	margin: 0;
+	padding: 0;
+	float: none;
+	
 }
+
 
 .list li meter{
 	
-	 display: inline-block;
-
-  height: 0;
-
-  margin: 0;
-
-  padding: 0;
-
-  width: 0;
-	-webkit-appearence: none;
-	apperence: none;
+	display: none;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	
 }
 
 .rater{
@@ -181,57 +205,50 @@ clearfix:after{
 
 
 
-.rater > li {
 
-  float: left;
+
+
+
+
+.rater-level a,
+.rater-level a:link,
+.rater-level a:visited {
+	color: #000;
+	text-decoration: none
 }
 
-
-
-.rater-level,
-
-.rater-level:link,
-
-.rater-level:visited {
-
-  color: #efecd2;
-
-  text-decoration: none
-
-}
-
-
-
+.rater-level a:hover,
+.rater-level a:focus,
+.rater-level a:active,
 .is-rated,
-
-.is-rated:link,
-
-.is-rated:visited {
-
-  color: #ffe91f;
-
+.is-rated a,
+.is-rated a:link,
+.is-rated a:visited,
+.is-rated a:hover,
+.is-rated a:focus,
+.is-rated a:active,
+.is-rated-hover a,
+.is-rated-hover a:link,
+.is-rated-hover a:visited {
+	color: #06F;
 }
 
 
+/************************/
 
-.rater-level:hover,
-
-.rater-level:focus,
-
-.rater-level:active,
-
-.is-rated:hover,
-
-.is-rated:focus,
-
-.is-rated:active {
-
-  color: #fda53a;
-
+.single{
+	margin: 0 auto;
+	padding: 20px;
+	width: 960px;
+	background: #a6a6a6 url('../images/listarea.gif') repeat;
+	
+	font-size: 1.25em;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-ms-border-radius: 0px 0px 10px 10px;
+	-o-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
 }
-
-
-
 
 
 

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 21, 2012 at 11:50 PM
+-- Generation Time: Mar 23, 2012 at 11:17 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -42,8 +42,8 @@ CREATE TABLE IF NOT EXISTS `skateboardparks` (
 --
 
 INSERT INTO `skateboardparks` (`id`, `name`, `address`, `rating`, `numrate`, `description`, `lat`, `longi`) VALUES
-(1, 'bowl', '', 25, 6, '', 45.295014380139, -75.8986105991385),
-(2, 'bowl', '', 10, 2, '', 45.3455666690555, -75.7609333333025),
+(1, 'bowl', '', 0, 0, '', 45.295014380139, -75.8986105991385),
+(2, 'bowl', '', 0, 0, '', 45.3455666690555, -75.7609333333025),
 (3, 'flat', '', 0, 0, '', 45.2907596432457, -75.8570398443872),
 (4, 'flat', '', 0, 0, '', 45.3153555816348, -75.6953923012091),
 (5, 'flat', '', 0, 0, '', 45.3833215360345, -75.3372987729018),
