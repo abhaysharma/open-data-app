@@ -1,0 +1,103 @@
+html{
+	margin: 0;
+	padding: 0;
+	background: #000 url("../images/pattren2.gif") repeat;
+	font: normal 100%/1.5 'Signika+Negative', sans-serif;
+}
+body{
+	margin: 20px auto;
+	padding: 10px;
+	width: 70%;
+	background: #cacaca url("../images/pattren1.gif") repeat;
+}
+article{
+	margin: 0 auto;
+	padding: 40px;
+	width: 90%;
+	background-color: rgba(255,255,255,0.8);
+
+}
+h1{
+	margin: 0;
+	padding: 0;
+	font-family: Frijole;
+	font-size: 4em;
+	text-align:center;	
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: square;
+}
+
+.links a{
+	color: #930;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover,
+a:active,
+a:focus{
+	color: #F30;
+}
+
+.userimg{
+	margin: 0 10px 0 0;
+	padding: 0;
+	float: left;
+}
+
+.user{
+	margin: 0 0 30px 0;
+}
+
+figure{
+	margin: 0 20px 0 0;
+	padding: 0;
+	height: 160px;
+	width: 200px;
+	float: left;
+	position: relative;
+	border: solid 1px #000;
+}
+
+figcaption{
+	margin: 0;
+	padding: 2px;
+	position: absolute;
+	top: 120px;
+	left: 10px;
+	background-color: rgba(209,28,28,0.7);
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+}
+figure a,
+figure a:link,
+figure a:visited{
+	color: #FFF;
+}
+
+figure a:hover,
+figure a:active,
+figure a:focus{
+	color: #00F;
+}
+
+.clearfix:before,
+.clearfix:after{
+	display: block;
+	content: "";
+	
+}
+
+.clearfix:after{
+	clear: both;
+}
+
