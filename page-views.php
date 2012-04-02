@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Views</title>
+</head>
+<body>
+	<?php 
+		//Track how many times you've viewed this page for this session
+		
+		//Turn on sessions
+		session_start();
+		
+		// Session information is stored in the $_SESSION super global
+		$_SESSION['page-views'] += 1;
+		
+	?>
+	
+	<strong>You've visited this page <?php echo $_SESSION['page-views']; ?> times.</strong>
+</body>
+</html>

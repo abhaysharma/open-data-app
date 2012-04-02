@@ -1,7 +1,7 @@
 
 <?php
-error_reporting(-1);
-ini_set('display_errors','on');
+//error_reporting(-1);
+//ini_set('display_errors','on');
 
 require_once 'includes/filter-wrapper.php';
 require_once 'includes/db.php';
@@ -22,14 +22,11 @@ include 'includes/theme-top.php'
 	<div id="map"> </div>
 	
 	<div class="list-area">
-	
-		<a href="admin/index.php">Admin</a>
-		<ul class="search">
-			<a href="#location" class="location">Location</a>
-			<input type="text" name="searchbar" class="search-bar">
-			<a href="#go" class="location">Go</a>
-		</ul>
-		
+	<button id="geo">From Here</button>
+		<form id="geo-form">
+			<label for="adr">Address</label>
+			<input id="adr">
+		</form>
 		<ul class="list clearfix">
 			<?php foreach($results as $parks):?>
 			<?php 
@@ -43,8 +40,8 @@ include 'includes/theme-top.php'
 			?>
 			<li itemscope itemtype="http://schema.org/TouristAttraction" data-id="<?php echo $parks['id']; ?>">
 					
-                    <a href="single.php?id=<?php echo $parks['id']; ?>" itemprop="name"><?php echo $parks['name']; ?></a>
-					
+                    <a href="/skateboardpark/<?php echo $parks['id']; ?>" itemprop="name"><?php echo $parks['name']; ?></a>
+					<span class="distance"></span>
                         <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates" >
                             <meta itemprop="latitude" content="<?php echo $parks['lat']; ?>">
                             <meta itemprop="longitude" content="<?php echo $parks['longi']; ?>">

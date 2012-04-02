@@ -5,7 +5,7 @@ $errors = array();
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 if(empty($id)){
-	header('Location:index.php');
+	header('Location: /index.php');
 	exit;
 }
 
@@ -54,7 +54,7 @@ if($_SERVER ['REQUEST_METHOD'] == 'POST'){
 		
 		$sql->execute();
 		
-		header('Location:index.php');
+		header('Location: /index.php');
 		exit;
 	}
 	
@@ -88,7 +88,7 @@ if($_SERVER ['REQUEST_METHOD'] == 'POST'){
 </head>
 
 <body>
-	<form method="post" action="edit.php?id=<?php echo $id; ?>">
+	<form method="post" action="/edit.php?id=<?php echo $id; ?>">
 		<label for="name">Name<?php if(isset($errors['name'])):?><strong>is required</strong><?php endif;?></label>
 		<input type="text" name="name" id="name" value="<?php echo $name;?>">
 		

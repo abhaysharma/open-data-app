@@ -50,7 +50,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		
 		$sql->execute();
 		
-		header('Location:index.php');
+		header('Location: /index.php');
 		exit;
 		
 	}
@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	<title>Ottawa Skateboard Parks&middot;Add New </title>
 </head>
 <body>
-	<form method="post" action="add.php">
+	<form method="post" action="/add.php">
 		<label for = "name">Name:<?php if(isset($errors['name'])):?><strong>is required</strong><?php endif;?></label>
 		<input type="text" name="name" id="name" value="<?php echo $name;?>">
 		

@@ -5,7 +5,7 @@ require_once '../includes/filter-wrapper.php';
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 if(empty($id)){
-	header('Location:index.php');
+	header('Location: /index.php');
 	exit;
 }
 
@@ -21,5 +21,5 @@ $sql->bindValue(':id', $id, PDO::PARAM_INT);
 
 $sql->execute();
 
-header('Location:index.php');
+header('Location: /index.php');
 exit;

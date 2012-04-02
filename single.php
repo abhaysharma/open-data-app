@@ -6,7 +6,7 @@
 	$id = filter_input(INPUT_GET,'id',FILTER_SANITIZE_NUMBER_INT);
 	
 	if(empty($id)){
-		header('Location:index.php');
+		header('Location: /index.php');
 		exit;
 	}
 	
@@ -23,7 +23,7 @@
 	$parks = $sql->fetch();
 	
 	if(empty($parks)){
-		header('Location:index.php');
+		header('Location: /index.php');
 		exit;
 	}
 	
@@ -71,7 +71,7 @@
                     <h3>Rate This</h3>
                     <ol class="rater rater-usable">
                         <?php for($i = 1 ; $i <= 5 ; $i++):?>
-                            <li class="rater-level"><a href= "rate.php?id=<?php echo $parks['id']; ?>&rating=<?php echo $i; ?>">★</a></li>
+                            <li class="rater-level"><a href= "/rate.php?id=<?php echo $parks['id']; ?>&rating=<?php echo $i; ?>">★</a></li>
                         <?php endfor; ?>
                     </ol>
 			<?php endif; ?>		

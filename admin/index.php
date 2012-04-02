@@ -1,5 +1,12 @@
 <?php
 require_once '../includes/filter-wrapper.php';
+require_once '../includes/users.php';
+
+if (!user_is_signed_in()){
+	header('Location: /sign-in.php');
+	exit;
+}
+
 require_once '../includes/db.php';
 
 $results = $db->query('
@@ -20,6 +27,9 @@ $results = $db->query('
 </head>
 <body>
 	<div>
+		<a href="sign-out.php">Sign Out</a>
+	</div>
+	<div>
 		<a href="add.php">Add a new Location.</a>
 		<a href="../index.php">Home</a>
 	</div>
@@ -34,7 +44,6 @@ $results = $db->query('
 					 '<p>'.$parks['description'].'</p>'
 					.'<p>'.$parks['longi'].'</p>'
 					.'<p>'.$parks['lat'].'</p>'
-					
 				;?>
 			</li>
 			<a href="edit.php?id=<?php echo $parks['id'];?>">Edit</a>
