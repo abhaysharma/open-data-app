@@ -1,11 +1,28 @@
 <?php
+/**
+* To edit an existing park in the database 
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
+
 require_once '../includes/filter-wrapper.php';
+require_once '../includes/users.php';
+
+if (!user_is_signed_in()){
+	header('Location: /admin/sign-in.php');
+	exit;
+}
 $errors = array();
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 if(empty($id)){
-	header('Location: /index.php');
+	header('Location: /admin/index.php');
 	exit;
 }
 
@@ -54,7 +71,7 @@ if($_SERVER ['REQUEST_METHOD'] == 'POST'){
 		
 		$sql->execute();
 		
-		header('Location: /index.php');
+		header('Location: /admin/index.php');
 		exit;
 	}
 	
@@ -85,29 +102,35 @@ if($_SERVER ['REQUEST_METHOD'] == 'POST'){
 <head>
 <meta charset="utf-8">
 <title>Edit &middot; <?php echo $name ?></title>
+<link href="../css/admin.css" rel="stylesheet">
 </head>
 
 <body>
-	<form method="post" action="/edit.php?id=<?php echo $id; ?>">
-		<label for="name">Name<?php if(isset($errors['name'])):?><strong>is required</strong><?php endif;?></label>
-		<input type="text" name="name" id="name" value="<?php echo $name;?>">
-		
-		<label for="address">Address<?php if(isset($errors['address'])):?><strong>is required</strong><?php endif;?></label>
-		<input type="text" name="address" id="address" value="<?php echo $address;?>">
-		
-		<label for="rating">Rating<?php if(isset($errors['rating'])):?><strong>is required</strong><?php endif;?></label>
-		<input type="number"  name="rating" id="rating" value="<?php echo $rating;?>">
-		
-		<label for="description">Description<?php if(isset($errors['description'])):?><strong>is required</strong><?php endif;?></label>
-		<input type="text" name="description" id="description" value="<?php echo $description;?>">
-		
-		<label for="longi">Longitude<?php if(isset($errors['longi'])):?><strong>is required</strong><?php endif;?></label>
-		<input type="number" name="longi" id="longi" value="<?php echo $longi;?>">
-		
-		<label for="lat">Latitude<?php if(isset($errors['lat'])):?><strong>is required</strong><?php endif;?></label>
-		<input type="number" name="lat" id="lat" value="<?php echo $lat;?>">	
-		<button type="submit" id="submit">Save</button>
-	</form>
+	<div class="editpage">
+		<form method="post" action="/admin/edit.php?id=<?php echo $id; ?>">
+			<label for="name">Name<?php if(isset($errors['name'])):?><strong> is required</strong><?php endif;?></label>
+			<input type="text" name="name" id="name" value="<?php echo $name;?>">
+			
+			<label for="address">Address<?php if(isset($errors['address'])):?><strong> is required</strong><?php endif;?></label>
+			<input type="text" name="address" id="address" value="<?php echo $address;?>">
+			
+			<label for="rating">Rating<?php if(isset($errors['rating'])):?><strong> is required</strong><?php endif;?></label>
+			<input type="number"  name="rating" id="rating" value="<?php echo $rating;?>">
+			
+			<label for="description">Description<?php if(isset($errors['description'])):?><strong> is required</strong><?php endif;?></label>
+			<input type="text" name="description" id="description" value="<?php echo $description;?>">
+			
+			<label for="longi">Longitude<?php if(isset($errors['longi'])):?><strong> is required</strong><?php endif;?></label>
+			<input type="number" name="longi" id="longi" value="<?php echo $longi;?>">
+			
+			<label for="lat">Latitude<?php if(isset($errors['lat'])):?><strong> is required</strong><?php endif;?></label>
+			<input type="number" name="lat" id="lat" value="<?php echo $lat;?>">	
+			<button type="submit" id="submit">Save</button>
+		</form>
+		<div class="back">
+			<a href="/admin/index.php">« Home</a>
+		</div>
+	</div>
 </body>
 </html>
 

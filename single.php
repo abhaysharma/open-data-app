@@ -1,4 +1,18 @@
 <?php
+
+/**
+* Displays information about the single park, it allows user to rate as well as see their previous ratings
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
+
+
+
 	require_once 'includes/filter-wrapper.php';
 	require_once 'includes/functions.php';
 	
@@ -71,7 +85,7 @@
                     <h3>Rate This</h3>
                     <ol class="rater rater-usable">
                         <?php for($i = 1 ; $i <= 5 ; $i++):?>
-                            <li class="rater-level"><a href= "/rate.php?id=<?php echo $parks['id']; ?>&rating=<?php echo $i; ?>">★</a></li>
+                            <li class="rater-level"><a href= "rate.php?id=<?php echo $parks['id']; ?>&rating=<?php echo $i; ?>">★</a></li>
                         <?php endfor; ?>
                     </ol>
 			<?php endif; ?>		

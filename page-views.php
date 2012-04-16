@@ -1,3 +1,20 @@
+<?php
+
+/**
+* Sets the session for a user and tracks how many time the page is viewed
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
+
+
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>

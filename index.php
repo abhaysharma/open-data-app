@@ -3,6 +3,17 @@
 //error_reporting(-1);
 //ini_set('display_errors','on');
 
+/**
+* Displays the list and map for the Open Data Set
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
+
 require_once 'includes/filter-wrapper.php';
 require_once 'includes/db.php';
 $results = $db->query('
@@ -26,6 +37,7 @@ include 'includes/theme-top.php'
 		<form id="geo-form">
 			<label for="adr">Address</label>
 			<input id="adr">
+			<button type="submit" class="submit"></button>
 		</form>
 		<ul class="list clearfix">
 			<?php foreach($results as $parks):?>
@@ -66,23 +78,5 @@ include 'includes/theme-top.php'
 	<div class="list-style"> </div>
 </div>
 <?php include 'includes/theme-bottom.php'?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

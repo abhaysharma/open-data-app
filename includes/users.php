@@ -1,6 +1,15 @@
 <?php 
+/**
+* A self-contained file that holds all the functions we need for the user authentication
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
 
-// A self-contained file that holds all the functions we need for the user authentication
 
 //require_once 'db.php';
 

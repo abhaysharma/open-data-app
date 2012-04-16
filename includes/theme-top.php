@@ -1,3 +1,16 @@
+<?php
+/**
+* An include file to be included on the top of the pages, reduces code repetition
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -6,7 +19,7 @@
 	<title><?php if(isset($title)){echo $title .'‧' ;} ?> Ottawa Skateboard Parks </title>
 	
     <link href='http://fonts.googleapis.com/css?family=Frijole|Signika+Negative:400,600,700' rel='stylesheet' type='text/css'>
-	<?php if($_SERVER['HTTP_HOST'] == 'localhost'):?>
+	<?php if($_SERVER['HTTP_HOST'] == 'ottawa-skateboard-parks'):?>
     <link href="/css/public.css" rel="stylesheet">
 	<?php else : ?>
     <link href="/css/public.min.css" rel="stylesheet">

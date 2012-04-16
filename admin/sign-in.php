@@ -1,10 +1,21 @@
 <?php 
 
+/**
+* To makesure that user is signed in before entering the admin sectio0n to make changes  
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
+
 require_once '../includes/users.php';
 require_once '../includes/db.php';
 
 if(user_is_signed_in()){
-	header('Location: /index.php');
+	header('Location: /admin/index.php');
 	exit;
 }
 
@@ -30,7 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		if(!empty($user)){
 			if(passwords_match($password, $user['password'])){
 				user_sign_in($user['id']);
-				header('Location: /index.php');
+				header('Location: /admin/index.php');
 				exit;				
 				
 			}else{
@@ -50,21 +61,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Sign In</title>
+	<meta charset="utf-8">
+	<title>Sign In</title>
+	<link href="../css/admin.css" rel="stylesheet">
 </head>
 <body>
-	<form method="post" action="/sign-in.php">
-		<div>		
-			<label for="email">E-Mail address please<?php if(isset($errors['user-non-existent'])): ?><strong>User not found</strong><?php endif; ?></label>
-			<input type="email" name="email" id="email">
-		</div>
-		<div>	
-			<label for="password">Password<?php if(isset($errors['password-no-match'])): ?><strong>Password Wrong</strong><?php endif; ?></label>
-			<input type="password" name="password" id="password">
-		</div>
-			<button type="submit">Submit</button>
-		
-	</form>
+	<div class="signin">
+		<form method="post" action="/admin/sign-in.php">
+			<div class="email">		
+				<label for="email">E-Mail address please<?php if(isset($errors['user-non-existent'])): ?><strong>User not found</strong><?php endif; ?></label>
+				<input type="email" name="email" id="email">
+			</div>
+			<div class="password">	
+				<label for="password">Password<?php if(isset($errors['password-no-match'])): ?><strong>Password Wrong</strong><?php endif; ?></label>
+				<input type="password" name="password" id="password">
+			</div>
+				<button type="submit" class="submit">Submit</button>
+			
+		</form>
+	</div>
 </body>
 </html>

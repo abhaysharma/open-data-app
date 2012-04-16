@@ -1,4 +1,17 @@
 <?php
+/**
+* An utility file with functions for saving the cokies, in order to avoid multiple rating 
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
+?>
+
+<?php
 
 function save_rate_cookie($id, $rate){
 	$cookie = get_rate_cookie();

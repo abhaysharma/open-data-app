@@ -1,3 +1,231 @@
-@charset "utf-8";
-/* CSS Document */
+html{
+	margin: 0;
+	padding: 0;
+	font: normal 100%/1.5 "Signika Negative", sans-serif ;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.admin-wrapper{
+	margin: 0 auto;
+	padding: 0;
+	width: 400px;
+	height: auto;
+
+}
+.buttons a,
+.buttons a:link,
+.buttons a:active,
+.buttons a:visited
+{
+	display: block;
+	margin: 1em auto 0;
+	padding: 0;
+	
+	width: 12em;
+	height: 2em;
+	color: #000;
+	
+	text-decoration: none;
+	text-align: center; 
+	background-color: #ff641f;
+	background-color: rgba(255,100,31,.8);
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.buttons a:hover,
+.buttons a:focus,
+.buttons a:target{
+	text-decoration: none;
+	
+	background-color: #ff641f;
+	background-color: rgba(255,100,31,1);
+}
+
+
+.buttons{
+	margin: 0;
+	padding: 1em;
+	background: #a6a6a6 url('../images/listarea.gif') repeat;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+}
+
+
+.parks-list{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	
+	border-left: solid 2px #CCC;
+	border-right: solid 2px #CCC;
+}
+
+.parks-list li:first-child h1{
+	margin-top: -5px;
+	padding-top: 15px; 
+}
+
+.parks-list li{
+	margin: 0 0 0 1em;
+	padding: 0;
+	
+}
+
+.parks-list a,
+.parks-list a:link,
+.parks-list a:visited,
+.parks-list a:active{
+	margin: 0 0 0 1em;
+	padding: 0;
+	text-decoration: none;
+	color: #F90;
+	
+}
+
+.parks-list a:hover,
+.parks-list a:focus,
+.parks-list a:target{
+	color: #F60;
+	text-decoration: underline;
+}
+
+/**********Sign In Page**********/
+
+.signin{
+	margin: 2em auto 0;
+	padding: 1em 0 0 0;
+	width: 400px;
+	height: 300px;
+	background: #a6a6a6 url('../images/listarea.gif') repeat;
+	
+	font-size: 1.25em;
+	color: #fff;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	-webkit-box-shadow: 0px 0px 20px 0px #666;
+	-moz-box-shadow: 0px 0px 20px 0px #666;
+	-ms-box-shadow: 0px 0px 20px 0px #666;
+	-o-box-shadow: 0px 0px 20px 0px #666;
+	box-shadow: 0px 0px 20px 0px #666;  
+}
+
+.email,
+.password,
+.submit{
+	margin: 1em 0 0 1em;
+	padding: 0;
+}
+
+.signin label{
+	display: block;
+}
+
+/*****************Add Page**************/
+
+.addpage,
+.editpage{
+	margin: 2em auto 0;
+	padding: 1em;
+	width: 400px; 
+	
+	background: #a6a6a6 url('../images/listarea.gif') repeat;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	
+	-webkit-box-shadow: 0px 0px 20px 0px #666;
+	-moz-box-shadow: 0px 0px 20px 0px #666;
+	-ms-box-shadow: 0px 0px 20px 0px #666;
+	-o-box-shadow: 0px 0px 20px 0px #666;
+	box-shadow: 0px 0px 20px 0px #666;
+	
+	font-size: 1.25em;
+	color: #fff;
+}
+.addpage label,
+.editpage label{
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	
+	background-color: #ff641f;
+	background-color: rgba(255,100,31,0.8);
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.addpage button,
+.editpage button{
+	display: block;
+}
+
+.addpage input,
+.editpage input{
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.back a,
+.back a:active,
+.back a:link,
+.back a:visited{
+	margin: 10px 0 0 0;
+	padding: 0;
+	display: block;
+	width: 5em;
+	height: 1.25em;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	background-color: #F90;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.back a:hover,
+.back a:focus,
+.back a:target{
+	text-decoration: underline;
+	background-color: #F60;
+}
+
+
+
+
+
+
+
+
+
+
 
