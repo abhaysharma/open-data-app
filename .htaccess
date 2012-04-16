@@ -1,5 +1,5 @@
 
-ErrorDocument 404 http://localhost/abhay/open-data-app-phpfog/error404.gif
+ErrorDocument 404 http://skateboardpark/error404.gif
 
 <IfModule mod_rewrite.c>
 	# Makes pretty URLs for use by making our query strings on single.php

@@ -14,7 +14,7 @@
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDekT-qRPGrK5KNoUffibrV3_0Napcreq0&sensor=false"></script>
 	<script src="/js/latlng.min.js"></script>
     
-	<?php if($_SERVER['HTTP_HOST'] == 'ottawa-skateboard-parks'):?>
+	<?php if($_SERVER['HTTP_HOST'] == 'skateboardpark'):?>
     <script src="/js/open-data-app.js"></script>
 	<?php else : ?>
     <script src="/js/open-data-app.min.js"></script>

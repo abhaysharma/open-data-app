@@ -56,38 +56,38 @@
 ?>
 
 	<div class="single">
-    	<div id="map2"></div>
+		<div id="map2"></div>
 		<h2><?php echo $parks['name'];?></h2>
 		
-        <p>Address: <?php echo $parks['address'];?></p>
+		<p>Address: <?php echo $parks['address'];?></p>
 		
-        <meter value="<?php echo $rated; ?>" min="0" max="5">Rating:<?php echo $rated ;?></meter>
+		<meter value="<?php echo $rated; ?>" min="0" max="5">Rating:<?php echo $rated ;?></meter>
 		
-        <p>Description: <?php echo $parks['description'];?></p>
+		<p>Description: <?php echo $parks['description'];?></p>
 		
-        <p>Latitude:<?php echo ' ' . $parks['lat']; ?></p>
+		<p>Latitude:<?php echo ' ' . $parks['lat']; ?></p>
 		
-        <p>Longitude:<?php echo ' ' . $parks['longi']; ?></p>
+		<p>Longitude:<?php echo ' ' . $parks['longi']; ?></p>
 		
-        <a href="index.php">Home</a>
+		<a href="index.php">Home</a>
 	
 			<?php if(isset($cookie[$id])):?>
-            
-                <h3>Your Rating</h3>
-                <ol class = "rater rater-usable">
-                    <?php for($i = 1 ; $i <= 5; $i++):?>
-                        <?php $class = ($i <= $cookie[$id]) ? 'is-rated' : ''; ?>
-                        <li class=" rater-level <?php echo $class; ?>">★</li>
-                    <?php endfor; ?>
-        	    </ol>
-            	<?php else:?>
-            
-                    <h3>Rate This</h3>
-                    <ol class="rater rater-usable">
-                        <?php for($i = 1 ; $i <= 5 ; $i++):?>
-                            <li class="rater-level"><a href= "rate.php?id=<?php echo $parks['id']; ?>&rating=<?php echo $i; ?>">★</a></li>
-                        <?php endfor; ?>
-                    </ol>
+	 
+				<h3>Your Rating</h3>
+				<ol class = "rater rater-usable">
+					<?php for($i = 1 ; $i <= 5; $i++):?>
+						<?php $class = ($i <= $cookie[$id]) ? 'is-rated' : ''; ?>
+						<li class=" rater-level <?php echo $class; ?>">★</li>
+					<?php endfor; ?>
+				</ol>
+			<?php else:?>
+		
+				<h3>Rate This</h3>
+					<ol class="rater rater-usable">
+						<?php for($i = 1 ; $i <= 5 ; $i++):?>
+							<li class="rater-level"><a href= "rate.php?id=<?php echo $parks['id']; ?>&rating=<?php echo $i; ?>">★</a></li>
+						<?php endfor; ?>
+					</ol>
 			<?php endif; ?>		
 	</div>
 		

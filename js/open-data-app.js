@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	
+	 
+
 	var locations = [];
 	
 	if (document.getElementById('map')) {	
@@ -135,7 +136,10 @@ $(document).ready(function(){
 	}
 		
 	if(navigator.geolocation){
-		console.log('here');
+$("#submitaddr").click(function(){
+	$("#geo-form").submit();
+	
+});
 		$('#geo').click(function(){
 			navigator.geolocation.getCurrentPosition(function(pos){
 				displayUserLoc(pos.coords.latitude, pos.coords.longitude);
@@ -160,16 +164,15 @@ $(document).ready(function(){
 	});
 	
 
- 
+
+
 
 
 
 
 });
 
-
-
-
+/********Using image for search********/
 
 
 

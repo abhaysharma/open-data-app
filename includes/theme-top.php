@@ -19,7 +19,7 @@
 	<title><?php if(isset($title)){echo $title .'‧' ;} ?> Ottawa Skateboard Parks </title>
 	
     <link href='http://fonts.googleapis.com/css?family=Frijole|Signika+Negative:400,600,700' rel='stylesheet' type='text/css'>
-	<?php if($_SERVER['HTTP_HOST'] == 'ottawa-skateboard-parks'):?>
+	<?php if($_SERVER['HTTP_HOST'] == 'skateboardpark'):?>
     <link href="/css/public.css" rel="stylesheet">
 	<?php else : ?>
     <link href="/css/public.min.css" rel="stylesheet">

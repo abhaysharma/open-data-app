@@ -3,7 +3,7 @@ html{
 	padding: 0;
 	
 	font: normal 100%/1.5 "Signika Negative", sans-serif ;
- }
+}
 
 body{
 	margin: 0;
@@ -240,9 +240,6 @@ h2{
 }
 
 
-.submit{
-	background: #ff641f url('../images/search.png') no-repeat;
-}
 
 
 
