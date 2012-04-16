@@ -1,531 +1,652 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
   <name><![CDATA[2009_Skateboard_Parks]]></name>
-  <open>1</open>
-  <Snippet maxLines="0"><![CDATA[]]></Snippet>
-  <description><![CDATA[Exported from 2009_Skateboard_Parks on 2010-Jun-17]]></description>
-  <Style id="FEATURES">
+  <description><![CDATA[Locations of Ottawa
+Skateboard Parks]]></description>
+  <atom:author>
+    <atom:name>REQUIRED: The person responsible for the metadata information.</atom:name>
+    <atom:uri></atom:uri>
+  </atom:author>
+  <atom:contributor>
+    <atom:name>Abhay Sharma</atom:name>
+    <atom:uri>http://geocommons.com/users/abhaysharma</atom:uri>    
+  </atom:contributor>
+  <atom:rights>Creative Commons Attribution-Share Alike 2.0</atom:rights>  
+  <atom:link rel="self" href="http://geocommons.com/overlays/228832.kml" type="application/vnd.google-earth.kml+xml"/>
+  <atom:link rel="edit" href="http://geocommons.com/overlays/228832.atom" type="application/atom+xml;type=entry"/>
+  <atom:link rel="alternate" href="http://geocommons.com/overlays/228832.atom" type="application/atom+xml"/>
+  <atom:link rel="alternate" href="http://geocommons.com/overlays/228832.html" type="text/html"/>  
+  <TimeStamp></TimeStamp>
+  
+      <!-- Poly Style -->
+      
+      <StyleMap id="default">
+      <Pair>
+      	<key>normal</key>
+        <styleUrl>#default_normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#default_highlight</styleUrl>
+      </Pair>
+      </StyleMap>
+      
+    <Style id="default_normal">
     <IconStyle>
-      <color>FFAD0051</color>
-      <scale>0.333333333333333</scale>
-      <Icon>
-        <href>root://icons/palette-4.png</href>
-        <x>32</x>
-        <y>128</y>
-        <w>32</w>
-        <h>32</h>
-      </Icon>
-    </IconStyle>
-    <LabelStyle>
-      <color>00FFFFFF</color>
-    </LabelStyle>
-    <BalloonStyle>
-      <text>
-      </text>
-    </BalloonStyle>
-  </Style>
-  <Style id="FEATURES_LABELS">
-    <IconStyle>
-      <color>00000000</color>
+      <scale>1</scale>
       <Icon>
         <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
       </Icon>
     </IconStyle>
     <LabelStyle>
-      <color>FFFFFFFF</color>
-    </LabelStyle>
-  </Style>
-  <Folder>
-    <name>Features</name>
-    <open>0</open>
-       <Placemark>
-         <name><![CDATA[bowl]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.8986105991385,45.295014380139,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[bowl]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.7609333333025,45.3455666690555,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.8570398443872,45.2907596432457,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.6953923012091,45.3153555816348,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.3372987729018,45.3833215360345,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.7602352556203,45.2806222163608,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.6867462142134,45.2226613631644,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.601158413536,45.436441777037,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.5627969203987,45.4296434131003,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.9266513667318,45.2606597749165,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.7019121821444,45.4090645717884,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.7452983627207,45.283184427216,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.9072116682685,45.2622895886896,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.6259961313039,45.3754015878117,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.8570098121126,45.2907580293663,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[flat]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -76.2058749839388,45.4703721794515,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[other]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.546518085983,45.4671345819931,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[other]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.4685616420708,45.2303256186161,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[other]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.601184787883,45.1476419496956,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[other]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -75.5569785022679,45.2613539859921,0
-           </coordinates>
-         </Point>
-       </Placemark>
-       <Placemark>
-         <name><![CDATA[other]]></name>
-         <Snippet maxLines="0"><![CDATA[]]></Snippet>
-         <styleUrl>#FEATURES</styleUrl>
-         <Point>
-           <extrude>0</extrude>
-           <altitudeMode>clampedToGround</altitudeMode>
-           <coordinates>
-             -76.0924495736342,45.4990500618436,0
-           </coordinates>
-         </Point>
-       </Placemark>
-  </Folder>
-  <Folder>
-    <name>Feature Labels (<![CDATA[TYPE]]>)</name>
-    <open>0</open>
-      <Placemark>
-        <name><![CDATA[bowl]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+    	<scale>0</scale>
+    
+        </LabelStyle>
+        <LineStyle>
+          <color>eeff6600</color>
+          <width>3</width>
+        
+        </LineStyle>
+        <PolyStyle>
+          <color>99ff6600</color>
+          <outline>1</outline>
+          <fill>1</fill>
+        </PolyStyle>
+    <BalloonStyle>
+      <bgColor>ffffff</bgColor>
+      <text>
+        <![CDATA[
+            <p><b><font color="#000000">$[NOTES/displayName]:</font></b> <font color="#555555">$[NOTES]</font></p>
+            <p><b><font color="#000000">$[TYPE/displayName]:</font></b> <font color="#555555">$[TYPE]</font></p>
+            <p><b><font color="#000000">$[PARKID/displayName]:</font></b> <font color="#555555">$[PARKID]</font></p>
+            <p><b><font color="#000000">$[ADDRESS/displayName]:</font></b> <font color="#555555">$[ADDRESS]</font></p>
+          <p align="center"><font size=3 face=arial color="#0099FF">Powered by GeoCommons</font></p>
+        ]]>
+      </text>
+    </BalloonStyle>
+    </Style>
+      
+      
+    <Style id="default_highlight">
+    <IconStyle>
+      <scale>1</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+      </Icon>
+    </IconStyle>
+    <LabelStyle>
+    	<scale>0</scale>
+    
+        </LabelStyle>
+        <LineStyle>
+          <color>ddffffff</color>
+          <width>2</width>
+        
+        </LineStyle>
+        <PolyStyle>
+          <color>ccff6600</color>
+          <outline>1</outline>
+          <fill>1</fill>
+        </PolyStyle>
+    <BalloonStyle>
+      <bgColor>ffffff</bgColor>
+      <text>
+        <![CDATA[
+            <p><b><font color="#000000">$[NOTES/displayName]:</font></b> <font color="#555555">$[NOTES]</font></p>
+            <p><b><font color="#000000">$[TYPE/displayName]:</font></b> <font color="#555555">$[TYPE]</font></p>
+            <p><b><font color="#000000">$[PARKID/displayName]:</font></b> <font color="#555555">$[PARKID]</font></p>
+            <p><b><font color="#000000">$[ADDRESS/displayName]:</font></b> <font color="#555555">$[ADDRESS]</font></p>
+          <p align="center"><font size=3 face=arial color="#0099FF">Powered by GeoCommons</font></p>
+        ]]>
+      </text>
+    </BalloonStyle>
+    </Style>
+          <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[137]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[65 STONEHAVEN DR Kanata]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.8986105991385,45.295014380139,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[bowl]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.8570398443873,45.2907596432387</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[923]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[334 RIVER RD Gloucester]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.7609333333025,45.3455666690555,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.6953923012092,45.3153555816278</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[960]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[8720 RUSSELL RD Cumberland]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.8570398443872,45.2907596432457,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.3372987729019,45.3833215360272</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[657]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[110 MALVERN DR Nepean]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.6953923012091,45.3153555816348,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.7602352556204,45.2806222163539</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[other]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[1219]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[1490 YOUVILLE DR Gloucester]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.3372987729018,45.3833215360345,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.5465180859831,45.4671345819859</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[bowl]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[1157]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[100 WALTER BAKER PL Kanata]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.7602352556203,45.2806222163608,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.8986105991386,45.295014380132</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor - Joined with basketball]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[330]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[5572 DOCTOR LEACH DR Rideau]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.6867462142134,45.2226613631644,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.6867462142134,45.2226613631575</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[762]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[2030 OGILVIE RD Gloucester]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.601158413536,45.436441777037,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.6011584135361,45.4364417770298</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[430]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[190 GLEN PARK DR Gloucester]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.5627969203987,45.4296434131003,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.5627969203988,45.4296434130932</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor - Mobile]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[other]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[9]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[2785 8TH LINE RD Osgoode]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.9266513667318,45.2606597749165,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.4685616420709,45.2303256186091</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Indoor - Summer]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[1159]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[10 WARNER COLPITTS LANE Goulbourn]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.7019121821444,45.4090645717884,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.9266513667319,45.2606597749096</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor - Mobile]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[other]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[653]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[5660 OSGOODE MAIN ST Osgoode]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.7452983627207,45.283184427216,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.6011847878831,45.1476419496887</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Indoor - Summer]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[812]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[435 BRONSON AVE Old Ottawa]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.9072116682685,45.2622895886896,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.7019121821445,45.4090645717813</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor - Mobile]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[other]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[693]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[1448 MEADOW DR Osgoode]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.6259961313039,45.3754015878117,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.556978502268,45.2613539859851</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[other]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[1334]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[262 LEN PURCELL DR West Carleton]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.8570098121126,45.2907580293663,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[flat]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-76.0924495736343,45.4990500618365</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[628]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[700 LONGFIELDS DR Nepean]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -76.2058749839388,45.4703721794515,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[other]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.7452983627208,45.2831844272091</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[bowl]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[1693]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[101 CENTREPOINTE DR Nepean]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.546518085983,45.4671345819931,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[other]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.7609333333026,45.3455666690485</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[989]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[1500 SHEA RD Goulbourn]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.4685616420708,45.2303256186161,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[other]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.9072116682686,45.2622895886827</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[1717]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[3142 CONROY RD Old Ottawa]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.601184787883,45.1476419496956,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[other]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.625996131304,45.3754015878046</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[137]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[65 STONEHAVEN DR Kanata]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -75.5569785022679,45.2613539859921,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[other]]></name>
-        <styleUrl>#FEATURES_LABELS</styleUrl>
+<coordinates>-75.8570098121127,45.2907580293593</coordinates>
+</Point>
+    </Placemark>
+    <Placemark>
+      <styleUrl>#default</styleUrl>
+        <name><![CDATA[Park:]]></name>
+      
+      <ExtendedData>
+          <Data name='Notes'>
+            <displayName><![CDATA[Notes]]></displayName>
+            <value><![CDATA[Outdoor]]></value>
+          </Data>
+          <Data name='Type'>
+            <displayName><![CDATA[Type]]></displayName>
+            <value><![CDATA[flat]]></value>
+          </Data>
+          <Data name='Park'>
+            <displayName><![CDATA[Park]]></displayName>
+            <value><![CDATA[1133]]></value>
+          </Data>
+          <Data name='Address'>
+            <displayName><![CDATA[Address]]></displayName>
+            <value><![CDATA[100 CLIFFORD CAMPBELL ST West Carleton]]></value>
+          </Data>
+      </ExtendedData>
         <Point>
-          <extrude>0</extrude>
-          <altitudeMode>clampedToGround</altitudeMode>
-          <coordinates>
-            -76.0924495736342,45.4990500618436,0
-          </coordinates>
-        </Point>
-      </Placemark>
-  </Folder>
+<coordinates>-76.2058749839388,45.4703721794444</coordinates>
+</Point>
+    </Placemark>
 </Document>
 </kml>

@@ -6,13 +6,15 @@ $places_xml = simplexml_load_file('2009_skateboard_parks.kml');
 //$places_xml = simplexml_load_file('communityGardens.kml');
 
 $sql = $db->prepare('
-	INSERT INTO skateboardparks (name,  longi, lat)
-	VALUES (:name, :longi, :lat)
+	INSERT INTO skateboardparks (name,  longi, lat, address)
+	VALUES (:name, :longi, :lat, :address)
 ');
 
-foreach($places_xml->Document->Folder[0]->Placemark as $place){
+//foreach($places_xml->Document->Folder[0]->Placemark as $place)
+foreach($places_xml->Document->Placemark as $place){
 	//echo $place->name;
-	
+	$name = '';
+	$address = '';
 	$coords = explode(',',trim( $place->Point->coordinates));
 	//$adr='';
 	/*
@@ -22,14 +24,18 @@ foreach($places_xml->Document->Folder[0]->Placemark as $place){
 		
 		'trim' is to remove the extra spaces from the exploded string
 	*/
-	/*foreach ($place->ExtendedData->SchemaData->SimpleData as $civic){
-		if ($civic->attributes()->name == 'LEGAL_ADDR'){
-			$adr = $civic;
+
+	foreach ($place->ExtendedData->Data as $civic){
+		if ($civic->attributes()->name == 'Type'){
+			$name = ucwords(strtolower($civic->value));
 		}
-	}*/
-	
-	$sql->bindValue(':name', $place->name, PDO::PARAM_STR);
-	//$sql->bindValue(':address', $adr, PDO::PARAM_STR);
+		
+		if ($civic->attributes()->name == 'Address'){
+			$address = ucwords(strtolower($civic->value));
+		}
+	}
+	$sql->bindValue(':name', $name, PDO::PARAM_STR);
+	$sql->bindValue(':address', $address, PDO::PARAM_STR);
 	$sql->bindValue(':longi', $coords[0], PDO::PARAM_STR);
 	$sql->bindValue(':lat', $coords[1], PDO::PARAM_STR);
 	$sql->execute();

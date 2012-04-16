@@ -69,7 +69,7 @@
 		
 		<p>Longitude:<?php echo ' ' . $parks['longi']; ?></p>
 		
-		<a href="index.php">Home</a>
+		<a href="/index.php">Home</a>
 	
 			<?php if(isset($cookie[$id])):?>
 	 

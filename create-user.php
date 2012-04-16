@@ -13,8 +13,8 @@
 
 // THIS FILE SHOULD NEVER BE PUBLICALLY ACCESSIBLE !!
 
-require_once 'includes/users.php';
-require_once 'includes/db.php';
+require_once '/includes/users.php';
+require_once '/includes/db.php';
 
 $email = 'abhaysharma678@gmail.com';
 $password = 'password';

@@ -253,6 +253,11 @@ h2{
 	border-left: solid 2px #666;
 }
 
+.location img:hover,
+.search img:hover{
+	cursor: pointer;
+}
+
 #geo-form,
 .location,
 .search{
