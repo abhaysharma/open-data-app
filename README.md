@@ -1,4 +1,4 @@
-## Ottawa Skateboard Parks
+#Ottawa Skateboard Parks
 ******************
 This app shows the skateboard parks in Ottawa area. 
 Users can click on a particular park and rate the park. 
