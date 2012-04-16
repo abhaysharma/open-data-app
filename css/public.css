@@ -239,6 +239,60 @@ h2{
 	border-radius: 0px 0px 10px 10px;
 }
 
+.form-area{
+	margin: 0;
+	padding: 0;
+	border: solid 2px #666;
+}
+
+.location{
+	border-right: solid 2px #666;
+}
+
+.search{
+	border-left: solid 2px #666;
+}
+
+#geo-form,
+.location,
+.search{
+	display: block;
+	float: left;
+}
+
+#geo-form{
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+.info-window{
+	text-align: center;
+}
+
+.info-window strong{
+	font: normal 100%/1.5 Frijole, sans-serif ;
+	color: #ff641f;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+.info-window a,
+.info-window a:visited,
+.info-window a:link,
+.info-window a:active{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #333;
+	display: block;
+}
+
+
+.info-window a:hover,
+.info-window a:focus,
+.info-window a:target{
+	color: #000;
+}
 
 
 

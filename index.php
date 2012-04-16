@@ -33,12 +33,17 @@ include 'includes/theme-top.php'
 	<div id="map"> </div>
 	
 	<div class="list-area">
-	<img src="images/location.png" id="geo" alt="from your current location">
-		<form id="geo-form">
-			<label for="adr">Address</label>
-			<input id="adr">
+	<div class="form-area clearfix">
+	<div class="location">
+		<img src="images/location.png" id="geo" alt="from your current location">
+	</div>
+			<form id="geo-form">
+				<input id="adr" placeholder="Type your addresss..">
+			</form>
+		<div class="search">
 			<img src="images/search.png" id="submitaddr" alt="submit button">
-		</form>
+		</div>
+	</div>
 		<ul class="list clearfix">
 			<?php foreach($results as $parks):?>
 			<?php 
