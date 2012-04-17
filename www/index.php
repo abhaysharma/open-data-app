@@ -35,13 +35,13 @@ include 'includes/theme-top.php'
 	<div class="list-area">
 	<div class="form-area clearfix">
 	<div class="location">
-		<img src="images/location.png" id="geo" alt="from your current location">
+		<img src="/images/location.png" id="geo" alt="from your current location">
 	</div>
 			<form id="geo-form">
 				<input id="adr" placeholder="Type your addresss..">
 			</form>
 		<div class="search">
-			<img src="images/search.png" id="submitaddr" alt="submit button">
+			<img src="/images/search.png" id="submitaddr" alt="submit button">
 		</div>
 	</div>
 		<ul class="list clearfix">
