@@ -170,12 +170,13 @@ $("#submitaddr").click(function(){
 
 
 
+
+
+/********DisQus********/
+
+
+   
 });
-
-/********Using image for search********/
-
-
-
 
 
 
