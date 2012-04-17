@@ -1,11 +1,11 @@
 <?php
-require_once '../includes/users.php';
+require_once 'www/includes/users.php';
 
 if (!user_is_signed_in()){
-	header('Location: /admin/sign-in.php');
+	header('Location: www/admin/sign-in.php');
 	exit;
 }
-require_once '../includes/db.php';
+require_once 'www/includes/db.php';
 
 $places_xml = simplexml_load_file('2009_skateboard_parks.kml');
 //$places_xml = simplexml_load_file('communityGardens.kml');

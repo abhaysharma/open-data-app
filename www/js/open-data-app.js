@@ -18,7 +18,6 @@ $(document).ready(function(){
 		$('.list > li').each(function(){
 			var park = $(this).find('a').html();
 			
-			
 			var info = '<div class="info-window">'
 						+'<strong>' + park + '</strong>'
 						+'<a href="skateboardpark/' + $(this).attr('data-id') + '#rate">Rate This!</a>' 
