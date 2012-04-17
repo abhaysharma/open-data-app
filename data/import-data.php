@@ -1,5 +1,10 @@
 <?php
+require_once '../includes/users.php';
 
+if (!user_is_signed_in()){
+	header('Location: /admin/sign-in.php');
+	exit;
+}
 require_once '../includes/db.php';
 
 $places_xml = simplexml_load_file('2009_skateboard_parks.kml');
