@@ -25,19 +25,16 @@ header{
 	padding: 0;
 	height: 200px;
 	background: transparent url("../images/header-img.png") no-repeat center center;
-	background-size: contain;
+	xbackground-size: contain;
 }
 
 h1{
 	margin: 0;
-	padding: 100px 0 0 0;
+	padding: 0;
 	width: 100%;
 	
 	font: normal 350%/1.5 Frijole, sans-serif ;
 	color: #ff641f;
-	
-	
-	
 	text-align: center;
 }
 
@@ -72,6 +69,15 @@ h2{
 	-ms-border-radius: 0px 0px 10px 10px;
 	-o-border-radius: 0px 0px 10px 10px;
 	border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.infoBox{
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	float: left;
 }
 
 .list-area{
@@ -228,7 +234,6 @@ h2{
 .single{
 	margin: 0 auto;
 	padding: 20px;
-	width: 960px;
 	background: #a6a6a6 url('../images/listarea.gif') repeat;
 	
 	font-size: 1.25em;
@@ -237,6 +242,23 @@ h2{
 	-ms-border-radius: 0px 0px 10px 10px;
 	-o-border-radius: 0px 0px 10px 10px;
 	border-radius: 0px 0px 10px 10px;
+}
+
+#map2{
+	margin: 0 2% 0 0;
+	padding:0;
+	float:left;
+	width: 46%;
+	height: 400px;
+	background-color: #ccc;
+	
+	border: solid 2px #F60;
+}
+
+#disqus_thread{
+	margin: 0 ;
+	padding: 0;
+	width: 100%;
 }
 
 .form-area{
@@ -299,6 +321,72 @@ h2{
 	color: #000;
 }
 
+@media all and (max-width: 999px){
+	.wrapper{
+		width: 100%;
+	}
+	
+}
+
+@media all and (max-width: 768px){
+	h1{
+		font-size: 3em;
+	}
+	.wrapper{
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		color: #FFF;
+	}
+.list-area{
+	margin: 410px 0 0 10%;
+	width: 80%;
+	height: auto;
+	position: static;
+
+	float: left;
+	
+	-webkit-border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-ms-border-radius: 10px 10px 10px 10px;
+	-o-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+#map {
+	margin: 0 auto;
+	
+	width: 80%;
+	height: 400px;
+}
+
+	
+.form-area{
+	margin: 0;
+	padding: 0 0 0 30%;
+	border: solid 2px #666;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-ms-border-radius: 10px 10px 0px 0px;
+	-o-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#map2{
+	margin: 0 auto;
+	float:none;
+	width: 70%;
+	height: 400px;
+
+}
+
+.infoBox{
+	float: none;
+}
+}
 
 
 
