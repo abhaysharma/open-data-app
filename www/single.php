@@ -12,7 +12,7 @@
 */
 
 
-
+	
 	require_once 'includes/filter-wrapper.php';
 	require_once 'includes/functions.php';
 	
@@ -56,18 +56,19 @@
 ?>
 		
 	<div class="single">
-		<div id="map2"></div>
-		<h2><?php echo $parks['name'];?></h2>
 		
+		<h2><?php echo $parks['name'];?></h2>
+        <div id="map2"></div>
+		<div class="infoBox">
 		<p>Address: <?php echo $parks['address'];?></p>
 		
 		<meter value="<?php echo $rated; ?>" min="0" max="5">Rating:<?php echo $rated ;?></meter>
 		
 		<p>Description: <?php echo $parks['description'];?></p>
 		
-		<p>Latitude:<?php echo ' ' . $parks['lat']; ?></p>
+		<p>Latitude:<span class="singlelat"><?php echo ' ' . $parks['lat']; ?></span></p>
 		
-		<p>Longitude:<?php echo ' ' . $parks['longi']; ?></p>
+		<p>Longitude:<span class="singlelongi"><?php echo ' ' . $parks['longi']; ?></span></p>
 		
 		<a href="/index.php">Home</a>
 	
@@ -89,9 +90,9 @@
 						<?php endfor; ?>
 					</ol>
 			<?php endif; ?>		
-
-		
-	<div id="disqus_thread"></div>
+		</div>
+	
+	<div id="disqus_thread" class="clearfix"></div>
 		<script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'ottawaskateboardparks'; // required: replace example with your forum shortname

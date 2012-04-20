@@ -8,8 +8,8 @@ $(document).ready(function(){
 			center : new google.maps.LatLng(45.423494,-75.697933)
 			, zoom : 13
 			, mapTypeId : google.maps.MapTypeId.ROADMAP	
-				
 		};
+		
 		
 		var map = new google.maps.Map(document.getElementById('map'), gmapOptions );
 		
@@ -61,12 +61,36 @@ $(document).ready(function(){
 			}
 			
 			
-			
 			google.maps.event.addListener(marker, 'click', showInfoWindow);
 			
 			google.maps.event.addDomListener($(this).children('a').get(0), 'click', showInfoWindow);
 		});
 	}
+	
+	if(document.getElementById('map2')){
+				var lng = parseFloat($('.singlelongi').html());
+				var lat = parseFloat($('.singlelat').html());
+			
+				var gmapOptions = {
+					center : new google.maps.LatLng(lat,lng)
+					, zoom : 15
+					, mapTypeId : google.maps.MapTypeId.ROADMAP	
+				};
+				
+				var map = new google.maps.Map(document.getElementById('map2'), gmapOptions );
+				
+				
+			
+			var pos = new google.maps.LatLng(lat,lng);
+				
+				var marker = new google.maps.Marker({
+					position: pos
+					,map : map
+					,title : $('h2').html()
+					,icon : '/images/marker.png'
+					,animation : google.maps.Animation.DROP
+				});
+		}
 	/*RATINGS*/
 	
 	
@@ -135,10 +159,9 @@ $(document).ready(function(){
 	}
 		
 	if(navigator.geolocation){
-$("#submitaddr").click(function(){
-	$("#geo-form").submit();
-	
-});
+		$("#submitaddr").click(function(){
+			$("#geo-form").submit();
+		});
 		$('#geo').click(function(){
 			navigator.geolocation.getCurrentPosition(function(pos){
 				displayUserLoc(pos.coords.latitude, pos.coords.longitude);
@@ -147,21 +170,20 @@ $("#submitaddr").click(function(){
 	}
 	
 	$('#geo-form').on('submit', function(ev){
-		ev.preventDefault();
-		console.log('form');
-		var geocoder = new google.maps.Geocoder();
-		
-		geocoder.geocode({
-				address: $('#adr').val() + 'Ottawa, ON'
-				, region : 'CA'
-			},function(results, status){
-						if(status == google.maps.GeocoderStatus.OK){
-							displayUserLoc(results[0].geometry.location.lat(),results[0].geometry.location.lng());
-						}
-				}
-		);
+						ev.preventDefault();
+						console.log('form');
+						var geocoder = new google.maps.Geocoder();
+						
+						geocoder.geocode({
+								address: $('#adr').val() + 'Ottawa, ON'
+								, region : 'CA'
+							},function(results, status){
+									if(status == google.maps.GeocoderStatus.OK){
+										displayUserLoc(results[0].geometry.location.lat(),results[0].geometry.location.lng());
+									}
+								}
+						);
 	});
-	   
 });
 
 
