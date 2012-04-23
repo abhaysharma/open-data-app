@@ -2,8 +2,11 @@
 ******************
 
 -This app shows the skateboard parks in Ottawa area. 
+
 -Users can click on a particular park and rate the park. 
+
 -Also in the input area users can type there address to see the skateboard parks close to them and the list sorts according to the distance from the location entered. 
+
 -You can also click on the location icon and use geo location to find your location and sort the list.
 
 #Author
@@ -11,11 +14,13 @@
 
 Abhay Sharma
 email: abhaysharmawebd@gmail.com
+
 website: http://abhaysharmawebd.com
 
 #Special Thanks
 *****************************
 [Thomasjbradley]<http://thomasjbradley.ca>
+
 [github]<https://github.com/thomasjbradley>
 #Phpfog Link
 *****************************************
