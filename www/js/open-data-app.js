@@ -1,6 +1,15 @@
 $(document).ready(function(){
 	 
-
+/**
+* This is the main javaScript file controlling the app 
+*
+* @package com.abhaysharmawebd.ottawa-skateboard-parks
+* @copyright 2012 Abhay Sharma
+* @author Abhay Sharma <abhaysharma@abhaysharmawebd.com>
+* @link https://github.com/abhaysharma/open-data-app
+* @license New BSD License
+* @version 1.0.0
+*/
 	var locations = [];
 	
 	if (document.getElementById('map')) {	
@@ -17,9 +26,11 @@ $(document).ready(function(){
 		
 		$('.list > li').each(function(){
 			var park = $(this).find('a').html();
-			
+			var address = $(this).find('.myAddress').html();
+			console.log(address);
 			var info = '<div class="info-window">'
-						+'<strong>' + park + '</strong>'
+						+'<strong>' + park + '</strong>' + '<br>'
+						+'<p>' + address + '</p>' + '<br>'
 						+'<a href="skateboardpark/' + $(this).attr('data-id') + '#rate">Rate This!</a>' 
 						+'</div>'
 				;

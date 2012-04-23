@@ -128,7 +128,7 @@ if($_SERVER ['REQUEST_METHOD'] == 'POST'){
 			<button type="submit" id="submit">Save</button>
 		</form>
 		<div class="back">
-			<a href="/admin/index.php">« Home</a>
+		<a href="/admin/index.php">« Home</a>
 		</div>
 	</div>
 </body>
