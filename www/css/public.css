@@ -379,6 +379,10 @@ img{
 	border-radius: 10px 10px 10px 10px;
 }
 
+.list{
+	background: transparent url('../images/liststyle.png') repeat-y;	
+}
+
 
 #map {
 	margin: 0 auto;
